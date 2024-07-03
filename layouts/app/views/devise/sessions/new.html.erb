@@ -1,0 +1,8 @@
+<!-- app/views/devise/sessions/new.html.erb -->
+<h2>Connexion</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <%= f.password_field :password, autocomplete: "current-password" %>
+  <%= f.submit "Se connecter" %>
+<% end %>
